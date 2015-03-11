@@ -1,6 +1,6 @@
 {
   "name": "clix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny utility to make easy to create command line tools that require a config file in an easy way. It uses [optionator](https://www.npmjs.com/package/optionator) to parse the arguments ",
   "main": "lib/cli-launcher.js",
   "scripts": {
@@ -24,11 +24,6 @@
   "devDependencies": {
     "dispatchy": "^1.0.1",
     "esbeautifier": "^1.0.6",
-    "esformatter": "^0.5.0",
-    "esformatter-eol-last": "^1.0.0",
-    "esformatter-jsx": "^1.0.8",
-    "esformatter-quotes": "^1.0.0",
-    "esformatter-shebang-ignore": "^1.0.0",
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "file-entry-cache": "^1.0.1",
@@ -43,7 +38,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "lodash.merge": "https://registry.npmjs.org/lodash.merge/-/lodash.merge-3.0.3.tgz",
+    "lodash.merge": "^3.0.3",
     "optionator": "^0.5.0",
     "read-json-sync": "^1.1.0",
     "stringformat": "0.0.5"
