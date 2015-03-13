@@ -85,6 +85,7 @@ clix.launch( programOptions, function ( program ) {
   // 
   // program.showHelp() // <== method used to show the generated help if required to do it by other commands
   // program.showVersion() // <== will print the version in the stdout
+  // program.getVersion() // <== will return the version of the package
   // program.opts // <== the optionator parsed arguments
   //   for example program.opts.useCache, will be true if the cli was called
   //   doing `cli -useCache=true
