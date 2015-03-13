@@ -1,6 +1,6 @@
 {
   "name": "clix",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A tiny utility to make easy to create command line tools that require a config file in an easy way. It uses [optionator](https://www.npmjs.com/package/optionator) to parse the arguments ",
   "main": "lib/cli-launcher.js",
   "scripts": {
@@ -12,12 +12,12 @@
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
     "prepush": "npm run beautify-check && npm run eslint && npm test"
   },
-  "repository": "royriojas/clix",
-  "license": "MIT",
-  "author": {
-    "name": "Roy Riojas",
-    "url": "http://royriojas.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royriojas/clix"
   },
+  "license": "MIT",
+  "author": "Roy Riojas (http://royriojas.com)",
   "prepush": [
     "npm run prepush"
   ],
@@ -42,5 +42,21 @@
     "optionator": "^0.5.0",
     "read-json-sync": "^1.1.0",
     "stringformat": "0.0.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/royriojas/clix/issues"
+  },
+  "homepage": "https://github.com/royriojas/clix",
+  "keywords": [
+    "cli",
+    "command",
+    "line",
+    "tool",
+    "command",
+    "line",
+    "helper",
+    "parse",
+    "options",
+    "optionator"
+  ]
 }
