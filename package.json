@@ -6,12 +6,15 @@
   "scripts": {
     "beautify": "esbeautifier index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "beautify-check": "esbeautifier -k index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ src/ specs/ -c './configs/eslint.json'",
+    "eslint": "eslinter index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
     "lint": "npm run beautify && npm run eslint",
-    "prepush": "npm run beautify-check && npm run eslint && npm test"
+    "check": "npm run beautify-check && npm run eslint && npm test",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
+    "bump": "bumpery --verify='npm run check'",
+    "install-hooks": "changelogx install-hook && prepush install"
   },
   "repository": {
     "type": "git",
@@ -20,22 +23,19 @@
   "license": "MIT",
   "author": "Roy Riojas (http://royriojas.com)",
   "prepush": [
-    "npm run prepush"
+    "npm run check"
   ],
   "devDependencies": {
-    "dispatchy": "^1.0.1",
-    "esbeautifier": "^1.0.8",
-    "eslint": "^0.16.1",
-    "eslint-friendly-formatter": "^1.0.3",
-    "file-entry-cache": "^1.0.1",
-    "glob-expand": "0.0.2",
+    "bumpery": "^1.0.7",
+    "changelogx": "^1.0.12",
+    "esbeautifier": "^2.0.5",
+    "eslinter": "^1.0.2",
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
-    "prepush": "^1.0.2",
+    "prepush": "^2.0.4",
     "proxyquire": "^1.4.0",
     "read-file": "^0.1.2",
-    "watch-spawn": "^1.0.3",
-    "write": "^0.1.1"
+    "watch-spawn": "^1.0.3"
   },
   "dependencies": {
     "chalk": "^1.0.0",
@@ -44,6 +44,21 @@
     "read-json-sync": "^1.1.0",
     "stringformat": "0.0.5"
   },
+
+  "changelogx": {
+    "ignoreRegExp": [
+      "BLD: Release",
+      "BLD: Update Deps",
+      "DOC: Generate Changelog",
+      "Generated Changelog"
+    ],
+    "issueIDRegExp": "#(\\d+)",
+    "commitURL": "https://github.com/royriojas/clix/commit/{0}",
+    "authorURL": "https://github.com/{0}",
+    "issueIDURL": "https://github.com/royriojas/clix/issues/{0}",
+    "projectName": "clix"
+  },
+
   "bugs": {
     "url": "https://github.com/royriojas/clix/issues"
   },

@@ -1,4 +1,4 @@
-describe( 'bin/esbeautifier', function () {
+describe( 'bin/cli', function () {
   var proxyquire = require( 'proxyquire' ).noCallThru().noPreserveCache();
 
 
