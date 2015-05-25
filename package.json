@@ -4,7 +4,7 @@
   "description": "A tiny utility to make easy to create command line tools that require a config file in an easy way. It uses [optionator](https://www.npmjs.com/package/optionator) to parse the arguments ",
   "main": "lib/cli-launcher.js",
   "scripts": {
-    "beautify": "esbeautifier index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "beautify": "esbeautifier -u index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "beautify-check": "esbeautifier -k index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "eslint": "eslinter index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "test": "mocha-runner 'specs/**/*.js'",
