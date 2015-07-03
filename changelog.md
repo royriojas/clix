@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v1.1.1
+- **Build Scripts Changes**
+  - Add do-changelog npm script entry - [61906eb]( https://github.com/royriojas/clix/commit/61906eb ), [royriojas](https://github.com/royriojas), 03/07/2015 16:28:42
+
+    
 ## v1.1.0
 - **Features**
   - turn off colorized output by default - [f51e5c3]( https://github.com/royriojas/clix/commit/f51e5c3 ), [royriojas](https://github.com/royriojas), 03/07/2015 16:24:24
