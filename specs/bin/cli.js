@@ -4,9 +4,7 @@ describe( 'bin/cli', function () {
 
   beforeEach( function () {
     var me = this;
-    me.mainMock = me.sandbox.createSpyObj( 'main', [
-      'run'
-    ] );
+    me.mainMock = me.sandbox.createSpyObj( 'main', [ 'run' ] );
   } );
 
   it( 'should launch the main module run method', function () {
@@ -14,6 +12,14 @@ describe( 'bin/cli', function () {
 
     proxyquire( '../../bin/cli', {
       '../src/main': me.mainMock,
+      './console': {
+        ok: function () {},
+        log: function () {},
+        subtle: function () {},
+        error: function () {},
+        success: function () {},
+        '@runtimeGlobal': true
+      },
       './process': {
         argv: [
           'node',

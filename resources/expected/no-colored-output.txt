@@ -1,0 +1,5 @@
+>> this is a test of a log message
+>> this is a test of an ok message
+>> this is a test of an error message
+>> this is a test of a success message
+>> this is a test of a subtle message

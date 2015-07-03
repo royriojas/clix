@@ -5,10 +5,12 @@ var programOptions = require( '../src/options' );
 
 var cliLauncher = require( '../lib/cli-launcher' );
 
-//cliLauncher.onError = function () {
-//  // handle the error here
-//};
-
 cliLauncher.launch( programOptions, function ( program ) {
+  program.subtle( 'subtle message' );
+  program.log( 'log message' );
+  program.ok( 'ok message' );
+  program.error( 'error message' );
+  program.success( 'success message' );
+
   main.run( program );
 } );

@@ -1,0 +1,5 @@
+[37m>>[39m [37mthis is a test[39m [37mof a log message[39m
+[33m>>[39m [33mthis is a test[39m [33mof an ok message[39m
+[31m>>[39m [31mthis is a test[39m [31mof an error message[39m
+[32m>>[39m [32mthis is a test[39m [32mof a success message[39m
+[90m>>[39m [90mthis is a test[39m [90mof a subtle message[39m
