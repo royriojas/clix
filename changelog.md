@@ -1,5 +1,17 @@
 
 # clix - Changelog
+## v1.1.0
+- **Features**
+  - turn off colorized output by default - [f51e5c3]( https://github.com/royriojas/clix/commit/f51e5c3 ), [royriojas](https://github.com/royriojas), 03/07/2015 16:24:24
+
+    **BREAKING CHANGE**: Well not really, but it changes the way it behaved before, aesthetically speaking
+    
+    To enable the colored output pass the option `colored-ouptut` to the command line like
+    
+    ```
+    ./bin/cli.js --colored-output
+    ```
+    
 ## v1.0.7
 - **Build Scripts Changes**
   - Change the building scripts to use the cache to only beautify changed files - [660b82b]( https://github.com/royriojas/clix/commit/660b82b ), [Roy Riojas](https://github.com/Roy Riojas), 25/05/2015 04:56:59
