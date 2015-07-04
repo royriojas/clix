@@ -3,9 +3,9 @@ var path = require( 'path' );
 module.exports = {
   pkgJSONPath: path.resolve( __dirname, '../package.json' ),
   configFile: {
-    defaultName: '.esformatter',
-    pathToLocalConfig: path.resolve( __dirname, '../configs/esformatter.json' ),
-    description: 'Path to your `esformatter` config, if not provided will try to use the `.esformatter` file in your current working directory, if not found will use the one provided with this package'
+    //defaultName: 'bundly.conf.js',
+    //pathToLocalConfig: path.resolve( __dirname, '../configs/esformatter.json' ),
+    //description: 'Path to  `esformatter` config, if not provided will try to use the `.esformatter` file in your current working directory, if not found will use the one provided with this package'
   },
   //useDefaultOptions: true,
   optionator: {
