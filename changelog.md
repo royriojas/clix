@@ -1,5 +1,11 @@
 
 # clix - Changelog
+## v1.1.2
+#### config
+- **Enhancements**
+  - config file can be a js module exporting a function - [760d055]( https://github.com/royriojas/clix/commit/760d055 ), [royriojas](https://github.com/royriojas), 03/07/2015 21:45:19
+
+    
 ## v1.1.1
 - **Build Scripts Changes**
   - Add do-changelog npm script entry - [61906eb]( https://github.com/royriojas/clix/commit/61906eb ), [royriojas](https://github.com/royriojas), 03/07/2015 16:28:42
