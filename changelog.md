@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v1.1.5
+- **Refactoring**
+  - Prevent failing if the `env` variable is not set - [3e7d447]( https://github.com/royriojas/clix/commit/3e7d447 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:24:35
+
+    
 ## v1.1.4
 - **Build Scripts Changes**
   - Update bumpery dep - [d4f5064]( https://github.com/royriojas/clix/commit/d4f5064 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:06:28
