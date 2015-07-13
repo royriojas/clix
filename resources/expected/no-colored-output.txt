@@ -3,3 +3,4 @@
 >> this is a test of an error message
 >> this is a test of a success message
 >> this is a test of a subtle message
+this is a test of a print message

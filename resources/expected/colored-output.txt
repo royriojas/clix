@@ -3,3 +3,4 @@
 [31m>>[39m [31mthis is a test[39m [31mof an error message[39m
 [32m>>[39m [32mthis is a test[39m [32mof a success message[39m
 [90m>>[39m [90mthis is a test[39m [90mof a subtle message[39m
+[90mthis is a test[39m [90mof a print message[39m

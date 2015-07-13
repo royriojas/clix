@@ -23,6 +23,7 @@ describe( 'clix-console', function () {
       csl.error( 'this is a test', 'of an error message' );
       csl.success( 'this is a test', 'of a success message' );
       csl.subtle( 'this is a test', 'of a subtle message' );
+      csl.print( 'this is a test', 'of a print message' );
 
       var fs = require( 'fs' );
       var expected = fs.readFileSync( './resources/expected/colored-output.txt', {
@@ -57,6 +58,7 @@ describe( 'clix-console', function () {
       csl.error( 'this is a test', 'of an error message' );
       csl.success( 'this is a test', 'of a success message' );
       csl.subtle( 'this is a test', 'of a subtle message' );
+      csl.print( 'this is a test', 'of a print message' );
 
       var fs = require( 'fs' );
       //fs.writeFileSync('./resources/expected/no-colored-output.txt', output);
