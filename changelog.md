@@ -1,5 +1,17 @@
 
 # clix - Changelog
+## v1.1.4
+- **Build Scripts Changes**
+  - Update bumpery dep - [d4f5064]( https://github.com/royriojas/clix/commit/d4f5064 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:06:28
+
+    
+- **Enhancements**
+  - Added the print option to print in gray messages even if `quiet` mode is set - [e1cf344]( https://github.com/royriojas/clix/commit/e1cf344 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:00:14
+
+    
+  - Added the print option to print in gray messages even if `quiet` mode is set - [de208f0]( https://github.com/royriojas/clix/commit/de208f0 ), [royriojas](https://github.com/royriojas), 12/07/2015 18:59:42
+
+    
 ## v1.1.2
 #### config
 - **Enhancements**
