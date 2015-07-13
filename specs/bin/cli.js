@@ -26,6 +26,9 @@ describe( 'bin/cli', function () {
           './bin/cli',
           'src/**/*.js'
         ],
+        env: {
+
+        },
         cwd: function () {
           return './';
         },

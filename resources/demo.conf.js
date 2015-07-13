@@ -1,5 +1,5 @@
-module.exports = function (opts) {
-  console.log('opts', opts);
+module.exports = function (clix) {
+  clix.subtle('opts', clix.opts);
   return {
     options: {
       //banner: opts.banner
