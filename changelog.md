@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v1.1.6
+- **Build Scripts Changes**
+  - Use clix-logger module for logs, updated dependencies and build scripts - [5950e1b]( https://github.com/royriojas/clix/commit/5950e1b ), [royriojas](https://github.com/royriojas), 07/08/2015 21:39:15
+
+    
 ## v1.1.5
 - **Refactoring**
   - Prevent failing if the `env` variable is not set - [3e7d447]( https://github.com/royriojas/clix/commit/3e7d447 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:24:35
