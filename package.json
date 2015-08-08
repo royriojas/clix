@@ -13,9 +13,13 @@
     "lint": "npm run beautify && npm run eslint",
     "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
-    "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog'",
-    "bump": "bumpery --verify='npm run check'",
-    "install-hooks": "changelogx install-hook && prepush install"
+    "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog' --no-verify",
+    "install-hooks": "prepush install && changelogx install-hook && precommit install",
+    "pre-v": "npm run check",
+    "post-v": "npm run do-changelog && git push --no-verify && git push --tags --no-verify",
+    "bump-major": "npm run pre-v && npm version major -m 'BLD: Release v%s' && npm run post-v",
+    "bump-minor": "npm run pre-v && npm version minor -m 'BLD: Release v%s' && npm run post-v",
+    "bump-patch": "npm run pre-v && npm version patch -m 'BLD: Release v%s' && npm run post-v"
   },
   "repository": {
     "type": "git",
@@ -27,19 +31,19 @@
     "npm run check"
   ],
   "devDependencies": {
-    "bumpery": "^1.1.0",
-    "changelogx": "^1.0.14",
-    "esbeautifier": "^3.1.3",
-    "eslinter": "^2.0.1",
+    "changelogx": "^1.0.16",
+    "esbeautifier": "^4.2.4",
+    "eslinter": "^2.2.0",
     "istanbul": "^0.3.17",
     "mocha-runner": "^1.0.8",
-    "prepush": "^2.0.4",
+    "precommit": "^1.1.2",
+    "prepush": "^3.1.2",
     "proxyquire": "^1.6.0",
-    "read-file": "^0.1.2",
-    "watch-spawn": "^1.0.3"
+    "read-file": "^0.2.0",
+    "watch-spawn": "^1.0.4"
   },
   "dependencies": {
-    "chalk": "^1.1.0",
+    "clix-logger": "^0.1.1",
     "extend": "^3.0.0",
     "optionator": "^0.5.0",
     "read-json-sync": "^1.1.0",
