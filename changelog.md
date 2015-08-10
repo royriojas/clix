@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.1
+- **Enhancements**
+  - Add name to the returned tasks - [0835297]( https://github.com/royriojas/clix/commit/0835297 ), [royriojas](https://github.com/royriojas), 09/08/2015 22:53:26
+
+    
 ## v2.0.0
 - **Refactoring**
   - better error handling and added helper to create task targets similar to grunt - [4337ad9]( https://github.com/royriojas/clix/commit/4337ad9 ), [royriojas](https://github.com/royriojas), 09/08/2015 22:02:39
