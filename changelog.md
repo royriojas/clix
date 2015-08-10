@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.0
+- **Refactoring**
+  - better error handling and added helper to create task targets similar to grunt - [4337ad9]( https://github.com/royriojas/clix/commit/4337ad9 ), [royriojas](https://github.com/royriojas), 09/08/2015 22:02:39
+
+    
 ## v1.1.6
 - **Build Scripts Changes**
   - Use clix-logger module for logs, updated dependencies and build scripts - [5950e1b]( https://github.com/royriojas/clix/commit/5950e1b ), [royriojas](https://github.com/royriojas), 07/08/2015 21:39:15
