@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.2
+- **Build Scripts Changes**
+  - Update to latest clix-logger - [34e0fd1]( https://github.com/royriojas/clix/commit/34e0fd1 ), [royriojas](https://github.com/royriojas), 11/08/2015 13:55:36
+
+    
 ## v2.0.1
 - **Enhancements**
   - Add name to the returned tasks - [0835297]( https://github.com/royriojas/clix/commit/0835297 ), [royriojas](https://github.com/royriojas), 09/08/2015 22:53:26
