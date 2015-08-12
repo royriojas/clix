@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.3
+- **Build Scripts Changes**
+  - update clix dep to get nicer log output - [20af260]( https://github.com/royriojas/clix/commit/20af260 ), [royriojas](https://github.com/royriojas), 11/08/2015 17:30:06
+
+    
 ## v2.0.2
 - **Build Scripts Changes**
   - Update to latest clix-logger - [34e0fd1]( https://github.com/royriojas/clix/commit/34e0fd1 ), [royriojas](https://github.com/royriojas), 11/08/2015 13:55:36
