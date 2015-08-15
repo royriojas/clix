@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.5
+- **Bug Fixes**
+  - missing deps - [d297129]( https://github.com/royriojas/clix/commit/d297129 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:22:32
+
+    
 ## v2.0.4
 - **Features**
   - Add a convenience method to expand globs - [1f3ddf1]( https://github.com/royriojas/clix/commit/1f3ddf1 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:20:25
