@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.8
+- **Build Scripts Changes**
+  - Update optionator to get default booleans - [52712d1]( https://github.com/royriojas/clix/commit/52712d1 ), [royriojas](https://github.com/royriojas), 15/08/2015 00:53:39
+
+    
 ## v2.0.7
 - **Features**
   - Add first version of `expandMapping` - [901a1ec]( https://github.com/royriojas/clix/commit/901a1ec ), [royriojas](https://github.com/royriojas), 14/08/2015 23:29:31
