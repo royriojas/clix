@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.10
+- **Refactoring**
+  - Extend `getTargets` to also resolve the files property using the `expandMapping` method - [81eed95]( https://github.com/royriojas/clix/commit/81eed95 ), [royriojas](https://github.com/royriojas), 15/08/2015 03:56:16
+
+    
 ## v2.0.9
 - **Features**
   - Implement expandMapping similar to the one in grunt - [7c052d8]( https://github.com/royriojas/clix/commit/7c052d8 ), [royriojas](https://github.com/royriojas), 15/08/2015 03:07:57
