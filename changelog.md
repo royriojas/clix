@@ -1,5 +1,26 @@
 
 # clix - Changelog
+## v2.0.7
+- **Features**
+  - Add first version of `expandMapping` - [901a1ec]( https://github.com/royriojas/clix/commit/901a1ec ), [royriojas](https://github.com/royriojas), 14/08/2015 23:29:31
+
+    
+- **Build Scripts Changes**
+  - update `prepush` and `precommit` deps - [41ccee0]( https://github.com/royriojas/clix/commit/41ccee0 ), [royriojas](https://github.com/royriojas), 14/08/2015 23:16:57
+
+    
+- **Refactoring**
+  - do not resolve paths by default - [8ba8b30]( https://github.com/royriojas/clix/commit/8ba8b30 ), [royriojas](https://github.com/royriojas), 14/08/2015 23:16:29
+
+    If the full paths are needed specify the option `resolvePaths: true`
+    
+    ```javascript
+    var files = cli.expandGlobs(globs, { resolvePaths: true });
+    ```
+    
+  - remove unnecessary try/catch - [30791fa]( https://github.com/royriojas/clix/commit/30791fa ), [royriojas](https://github.com/royriojas), 14/08/2015 22:58:18
+
+    
 ## v2.0.6
 - **Bug Fixes**
   - missing method in cli - [ba16f22]( https://github.com/royriojas/clix/commit/ba16f22 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:33:44
