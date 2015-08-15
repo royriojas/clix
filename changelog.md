@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.6
+- **Bug Fixes**
+  - missing method in cli - [ba16f22]( https://github.com/royriojas/clix/commit/ba16f22 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:33:44
+
+    
 ## v2.0.5
 - **Bug Fixes**
   - missing deps - [d297129]( https://github.com/royriojas/clix/commit/d297129 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:22:32
