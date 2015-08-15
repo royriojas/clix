@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.4
+- **Features**
+  - Add a convenience method to expand globs - [1f3ddf1]( https://github.com/royriojas/clix/commit/1f3ddf1 ), [royriojas](https://github.com/royriojas), 14/08/2015 19:20:25
+
+    
 ## v2.0.3
 - **Build Scripts Changes**
   - update clix dep to get nicer log output - [20af260]( https://github.com/royriojas/clix/commit/20af260 ), [royriojas](https://github.com/royriojas), 11/08/2015 17:30:06
