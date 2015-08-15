@@ -1,7 +1,6 @@
 describe( 'bin/cli', function () {
   var proxyquire = require( 'proxyquire' ).noCallThru().noPreserveCache();
 
-
   beforeEach( function () {
     var me = this;
     me.mainMock = me.sandbox.createSpyObj( 'main', [ 'run' ] );
@@ -12,14 +11,6 @@ describe( 'bin/cli', function () {
 
     proxyquire( '../../bin/cli', {
       '../src/main': me.mainMock,
-      './console': {
-        ok: function () {},
-        log: function () {},
-        subtle: function () {},
-        error: function () {},
-        success: function () {},
-        '@runtimeGlobal': true
-      },
       './process': {
         argv: [
           'node',
