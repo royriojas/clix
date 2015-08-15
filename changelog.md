@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.9
+- **Features**
+  - Implement expandMapping similar to the one in grunt - [7c052d8]( https://github.com/royriojas/clix/commit/7c052d8 ), [royriojas](https://github.com/royriojas), 15/08/2015 03:07:57
+
+    
 ## v2.0.8
 - **Build Scripts Changes**
   - Update optionator to get default booleans - [52712d1]( https://github.com/royriojas/clix/commit/52712d1 ), [royriojas](https://github.com/royriojas), 15/08/2015 00:53:39
