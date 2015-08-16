@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.11
+- **Tests Related fixes**
+  - Add tasks for get-target - [b9f7df7]( https://github.com/royriojas/clix/commit/b9f7df7 ), [royriojas](https://github.com/royriojas), 15/08/2015 22:39:58
+
+    
 ## v2.0.10
 - **Refactoring**
   - Extend `getTargets` to also resolve the files property using the `expandMapping` method - [81eed95]( https://github.com/royriojas/clix/commit/81eed95 ), [royriojas](https://github.com/royriojas), 15/08/2015 03:56:16
