@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.13
+- **Features**
+  - Specify more than one task to run - [08c9ede]( https://github.com/royriojas/clix/commit/08c9ede ), [royriojas](https://github.com/royriojas), 17/08/2015 02:01:57
+
+    
 ## v2.0.12
 - **Enhancements**
   - Add loadConfig method helper to load a configuration file other than the default one - [15107e9]( https://github.com/royriojas/clix/commit/15107e9 ), [royriojas](https://github.com/royriojas), 15/08/2015 22:52:07
