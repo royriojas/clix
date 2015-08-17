@@ -1,6 +1,6 @@
 {
   "name": "clix",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "A tiny utility to make easy to create command line tools that require a config file in an easy way. It uses [optionator](https://www.npmjs.com/package/optionator) to parse the arguments ",
   "main": "lib/cli-launcher.js",
   "scripts": {
