@@ -317,5 +317,92 @@ describe( 'get-targets', function () {
       //console.log( JSON.stringify( targets, null, 2 ) );
       expect( targets ).to.deep.equal( expected );
     } );
+
+    it( 'should return only the filtered tasks', function () {
+      var getTargets = require( '../../lib/get-targets' );
+      var targets = getTargets( {
+        options: {
+          global: true,
+          abc: 'global'
+        },
+        'target-0': {
+          src: 'resources/target/**.jpg',
+          dest: 'dest/'
+        },
+        'target-1': {
+          options: {
+            abc: 'local',
+            demo: 'other'
+          },
+          src: [
+            './resources/target/**/*.js'
+          ],
+          dest: './dest/'
+        },
+        'target-2': {
+          files: [
+            {
+              src: [
+                'target/**/*',
+                '!target/**/*.txt'
+              ],
+              dest: './dest/',
+              cwd: './resources'
+            }
+          ]
+        }
+      }, 'target-2, target-1' );
+
+      var expected = [
+        {
+          'name': 'target-2',
+          'options': {
+            'global': true,
+            'abc': 'global'
+          },
+          'files': [
+            {
+              'src': [
+                './target/demo-1.js',
+                './target/demo-1.less',
+                './target/demo-2.js',
+                './target/demo-2.less',
+                './target/demo-3.js',
+                './target/demo-3.less',
+                './target/sub-folder',
+                './target/sub-folder/sub-sub-1',
+                './target/sub-folder/sub-sub-1/demo-2.css',
+                './target/sub-folder/sub-sub-1/demo-3.jpg',
+                './target/sub-folder/sub-sub-1/target-2.js'
+              ],
+              'dest': './dest/',
+              'cwd': './resources'
+            }
+          ]
+        },
+        {
+          'name': 'target-1',
+          'options': {
+            'global': true,
+            'abc': 'local',
+            'demo': 'other'
+          },
+          'files': [
+            {
+              'src': [
+                './resources/target/demo-1.js',
+                './resources/target/demo-2.js',
+                './resources/target/demo-3.js',
+                './resources/target/sub-folder/sub-sub-1/target-2.js'
+              ],
+              'dest': './dest/'
+            }
+          ]
+        }
+      ];
+
+      expect( targets ).to.deep.equal( expected );
+
+    } );
   } );
 } );
