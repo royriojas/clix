@@ -237,78 +237,67 @@ describe( 'get-targets', function () {
               'src': [
                 './resources/target/demo-1.js'
               ],
-              'dest': './dest/target/demo-1.js',
-              'cwd': './resources'
+              'dest': './dest/target/demo-1.js'
             },
             {
               'src': [
                 './resources/target/demo-1.less'
               ],
-              'dest': './dest/target/demo-1.less',
-              'cwd': './resources'
+              'dest': './dest/target/demo-1.less'
             },
             {
               'src': [
                 './resources/target/demo-2.js'
               ],
-              'dest': './dest/target/demo-2.js',
-              'cwd': './resources'
+              'dest': './dest/target/demo-2.js'
             },
             {
               'src': [
                 './resources/target/demo-2.less'
               ],
-              'dest': './dest/target/demo-2.less',
-              'cwd': './resources'
+              'dest': './dest/target/demo-2.less'
             },
             {
               'src': [
                 './resources/target/demo-3.js'
               ],
-              'dest': './dest/target/demo-3.js',
-              'cwd': './resources'
+              'dest': './dest/target/demo-3.js'
             },
             {
               'src': [
                 './resources/target/demo-3.less'
               ],
-              'dest': './dest/target/demo-3.less',
-              'cwd': './resources'
+              'dest': './dest/target/demo-3.less'
             },
             {
               'src': [
                 './resources/target/sub-folder'
               ],
-              'dest': './dest/target/sub-folder',
-              'cwd': './resources'
+              'dest': './dest/target/sub-folder'
             },
             {
               'src': [
                 './resources/target/sub-folder/sub-sub-1'
               ],
-              'dest': './dest/target/sub-folder/sub-sub-1',
-              'cwd': './resources'
+              'dest': './dest/target/sub-folder/sub-sub-1'
             },
             {
               'src': [
                 './resources/target/sub-folder/sub-sub-1/demo-2.css'
               ],
-              'dest': './dest/target/sub-folder/sub-sub-1/demo-2.css',
-              'cwd': './resources'
+              'dest': './dest/target/sub-folder/sub-sub-1/demo-2.css'
             },
             {
               'src': [
                 './resources/target/sub-folder/sub-sub-1/demo-3.jpg'
               ],
-              'dest': './dest/target/sub-folder/sub-sub-1/demo-3.jpg',
-              'cwd': './resources'
+              'dest': './dest/target/sub-folder/sub-sub-1/demo-3.jpg'
             },
             {
               'src': [
                 './resources/target/sub-folder/sub-sub-1/target-2.js'
               ],
-              'dest': './dest/target/sub-folder/sub-sub-1/target-2.js',
-              'cwd': './resources'
+              'dest': './dest/target/sub-folder/sub-sub-1/target-2.js'
             }
           ]
         }
