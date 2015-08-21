@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.14
+- **Bug Fixes**
+  - remove cwd when the path is expanded - [27fbba0]( https://github.com/royriojas/clix/commit/27fbba0 ), [Roy Riojas](https://github.com/Roy Riojas), 20/08/2015 23:13:36
+
+    
 ## v2.0.13
 - **Features**
   - Specify more than one task to run - [08c9ede]( https://github.com/royriojas/clix/commit/08c9ede ), [royriojas](https://github.com/royriojas), 17/08/2015 02:01:57
