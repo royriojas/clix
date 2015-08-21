@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.0.15
+- **Features**
+  - add `ext` and `rename` options similar to grunt.file.expandMapping ones - [7e810d8]( https://github.com/royriojas/clix/commit/7e810d8 ), [Roy Riojas](https://github.com/Roy Riojas), 21/08/2015 01:39:08
+
+    
 ## v2.0.14
 - **Bug Fixes**
   - remove cwd when the path is expanded - [27fbba0]( https://github.com/royriojas/clix/commit/27fbba0 ), [Roy Riojas](https://github.com/Roy Riojas), 20/08/2015 23:13:36
