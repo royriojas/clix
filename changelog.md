@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.2.0
+- **Build Scripts Changes**
+  - update dev deps - [9b692e8]( https://github.com/royriojas/clix/commit/9b692e8 ), [Roy Riojas](https://github.com/Roy Riojas), 02/01/2017 03:05:44
+
+    
 ## v2.0.16
 - **Build Scripts Changes**
   - updated packages - [6ccf31a]( https://github.com/royriojas/clix/commit/6ccf31a ), [Roy Riojas](https://github.com/Roy Riojas), 31/07/2016 04:15:40
