@@ -34,13 +34,13 @@
     "npm run check"
   ],
   "devDependencies": {
-    "changelogx": "^2.0.0",
+    "changelogx": "2.0.1",
     "esbeautifier": "^4.2.4",
     "eslinter": "^2.2.0",
     "istanbul": "^0.3.17",
     "mocha-runner": "^1.1.1",
-    "precommit": "^1.2.0",
-    "prepush": "^3.1.9",
+    "precommit": "1.2.2",
+    "prepush": "3.1.11",
     "proxyquire": "^1.6.0",
     "read-file": "^0.2.0",
     "watch-spawn": "^2.0.0"
