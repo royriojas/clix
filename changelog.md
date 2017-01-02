@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v2.2.1
+- **Refactoring**
+  - Fix missing module - [22aafc9]( https://github.com/royriojas/clix/commit/22aafc9 ), [Roy Riojas](https://github.com/Roy Riojas), 02/01/2017 06:01:33
+
+    
 ## v2.2.0
 - **Build Scripts Changes**
   - update dev deps - [9b692e8]( https://github.com/royriojas/clix/commit/9b692e8 ), [Roy Riojas](https://github.com/Roy Riojas), 02/01/2017 03:05:44
