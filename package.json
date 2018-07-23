@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "clix-logger": "1.0.0",
-    "extend": "3.0.0",
+    "extend": "3.0.2",
     "glob-expand": "0.2.1",
     "jq-trim": "0.1.2",
     "optionator": "0.8.2",
