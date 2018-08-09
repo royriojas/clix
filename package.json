@@ -46,7 +46,7 @@
     "watch-spawn": "^2.0.0"
   },
   "dependencies": {
-    "clix-logger": "1.0.0",
+    "clix-logger": "1.0.2",
     "extend": "3.0.0",
     "glob-expand": "0.2.1",
     "jq-trim": "0.1.2",
