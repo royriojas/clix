@@ -1,5 +1,10 @@
 
 # clix - Changelog
+## v3.0.0
+- **Refactoring**
+  - Remove critical warning from audit - [41c3f5c]( https://github.com/royriojas/clix/commit/41c3f5c ), [Roy](https://github.com/Roy), 11/06/2019 03:05:22
+
+    
 ## v2.2.2
 - **Refactoring**
   - Upgrade clix-logger - [792ba67]( https://github.com/royriojas/clix/commit/792ba67 ), [Roy Riojas](https://github.com/Roy Riojas), 09/08/2018 02:02:53
