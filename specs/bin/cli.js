@@ -23,7 +23,7 @@ describe( 'bin/cli', function () {
         cwd: function () {
           return './';
         },
-        '@runtimeGlobal': true
+        '@global': true
       }
     } );
 

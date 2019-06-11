@@ -48,8 +48,9 @@
   "dependencies": {
     "clix-logger": "1.0.2",
     "extend": "3.0.0",
-    "glob-expand": "0.2.1",
+    "glob": "^7.1.4",
     "jq-trim": "0.1.2",
+    "lodash": "^4.17.11",
     "optionator": "0.8.2",
     "os-homedir": "1.0.2",
     "path-is-absolute": "1.0.1",
