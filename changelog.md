@@ -1,5 +1,13 @@
 
 # clix - Changelog
+## v4.0.0
+- **Refactoring**
+  - upgraded the modules - [a3aa349]( https://github.com/royriojas/clix/commit/a3aa349 ), [Roy Riojas](https://github.com/Roy Riojas), 10/07/2019 05:45:54
+
+    
+  - Remove critical warning from audit - [9a137cc]( https://github.com/royriojas/clix/commit/9a137cc ), [Roy Riojas](https://github.com/Roy Riojas), 09/07/2019 13:00:28
+
+    
 ## v3.0.0
 - **Refactoring**
   - Remove critical warning from audit - [41c3f5c]( https://github.com/royriojas/clix/commit/41c3f5c ), [Roy](https://github.com/Roy), 11/06/2019 03:05:22
@@ -20,37 +28,30 @@
   - update dev deps - [9b692e8]( https://github.com/royriojas/clix/commit/9b692e8 ), [Roy Riojas](https://github.com/Roy Riojas), 02/01/2017 03:05:44
 
     
-## v2.0.16
+## v2.1.0
 - **Build Scripts Changes**
   - updated packages - [6ccf31a]( https://github.com/royriojas/clix/commit/6ccf31a ), [Roy Riojas](https://github.com/Roy Riojas), 31/07/2016 04:15:40
 
     
-## v2.0.15
 - **Features**
   - add `ext` and `rename` options similar to grunt.file.expandMapping ones - [7e810d8]( https://github.com/royriojas/clix/commit/7e810d8 ), [Roy Riojas](https://github.com/Roy Riojas), 21/08/2015 03:39:08
 
     
-## v2.0.14
+  - Specify more than one task to run - [08c9ede]( https://github.com/royriojas/clix/commit/08c9ede ), [royriojas](https://github.com/royriojas), 17/08/2015 04:01:57
+
+    
 - **Bug Fixes**
   - remove cwd when the path is expanded - [27fbba0]( https://github.com/royriojas/clix/commit/27fbba0 ), [Roy Riojas](https://github.com/Roy Riojas), 21/08/2015 01:13:36
 
     
-## v2.0.13
-- **Features**
-  - Specify more than one task to run - [08c9ede]( https://github.com/royriojas/clix/commit/08c9ede ), [royriojas](https://github.com/royriojas), 17/08/2015 04:01:57
-
-    
-## v2.0.12
 - **Enhancements**
   - Add loadConfig method helper to load a configuration file other than the default one - [15107e9]( https://github.com/royriojas/clix/commit/15107e9 ), [royriojas](https://github.com/royriojas), 16/08/2015 00:52:07
 
     
-## v2.0.11
 - **Tests Related fixes**
   - Add tasks for get-target - [b9f7df7]( https://github.com/royriojas/clix/commit/b9f7df7 ), [royriojas](https://github.com/royriojas), 16/08/2015 00:39:58
 
     
-## v2.0.10
 - **Refactoring**
   - Extend `getTargets` to also resolve the files property using the `expandMapping` method - [81eed95]( https://github.com/royriojas/clix/commit/81eed95 ), [royriojas](https://github.com/royriojas), 15/08/2015 05:56:16
 
@@ -106,9 +107,80 @@
   - update clix dep to get nicer log output - [20af260]( https://github.com/royriojas/clix/commit/20af260 ), [royriojas](https://github.com/royriojas), 11/08/2015 19:30:06
 
     
-## v2.0.2
+## v2.0.16
 - **Build Scripts Changes**
+  - updated packages - [6ccf31a]( https://github.com/royriojas/clix/commit/6ccf31a ), [Roy Riojas](https://github.com/Roy Riojas), 31/07/2016 04:15:40
+
+    
+## v2.0.15
+- **Features**
+  - add `ext` and `rename` options similar to grunt.file.expandMapping ones - [7e810d8]( https://github.com/royriojas/clix/commit/7e810d8 ), [Roy Riojas](https://github.com/Roy Riojas), 21/08/2015 03:39:08
+
+    
+## v2.0.14
+- **Bug Fixes**
+  - remove cwd when the path is expanded - [27fbba0]( https://github.com/royriojas/clix/commit/27fbba0 ), [Roy Riojas](https://github.com/Roy Riojas), 21/08/2015 01:13:36
+
+    
+## v2.0.13
+- **Features**
+  - Specify more than one task to run - [08c9ede]( https://github.com/royriojas/clix/commit/08c9ede ), [royriojas](https://github.com/royriojas), 17/08/2015 04:01:57
+
+    
+## v2.0.12
+- **Enhancements**
+  - Add loadConfig method helper to load a configuration file other than the default one - [15107e9]( https://github.com/royriojas/clix/commit/15107e9 ), [royriojas](https://github.com/royriojas), 16/08/2015 00:52:07
+
+    
+## v2.0.11
+- **Tests Related fixes**
+  - Add tasks for get-target - [b9f7df7]( https://github.com/royriojas/clix/commit/b9f7df7 ), [royriojas](https://github.com/royriojas), 16/08/2015 00:39:58
+
+    
+## v2.0.10
+- **Refactoring**
+  - Extend `getTargets` to also resolve the files property using the `expandMapping` method - [81eed95]( https://github.com/royriojas/clix/commit/81eed95 ), [royriojas](https://github.com/royriojas), 15/08/2015 05:56:16
+
+    
+  - do not resolve paths by default - [8ba8b30]( https://github.com/royriojas/clix/commit/8ba8b30 ), [royriojas](https://github.com/royriojas), 15/08/2015 01:16:29
+
+    If the full paths are needed specify the option `resolvePaths: true`
+    
+    ```javascript
+    var files = cli.expandGlobs(globs, { resolvePaths: true });
+    ```
+    
+  - remove unnecessary try/catch - [30791fa]( https://github.com/royriojas/clix/commit/30791fa ), [royriojas](https://github.com/royriojas), 15/08/2015 00:58:18
+
+    
+- **Features**
+  - Implement expandMapping similar to the one in grunt - [7c052d8]( https://github.com/royriojas/clix/commit/7c052d8 ), [royriojas](https://github.com/royriojas), 15/08/2015 05:07:57
+
+    
+  - Add first version of `expandMapping` - [901a1ec]( https://github.com/royriojas/clix/commit/901a1ec ), [royriojas](https://github.com/royriojas), 15/08/2015 01:29:31
+
+    
+  - Add a convenience method to expand globs - [1f3ddf1]( https://github.com/royriojas/clix/commit/1f3ddf1 ), [royriojas](https://github.com/royriojas), 14/08/2015 21:20:25
+
+    
+- **Build Scripts Changes**
+  - Update optionator to get default booleans - [52712d1]( https://github.com/royriojas/clix/commit/52712d1 ), [royriojas](https://github.com/royriojas), 15/08/2015 02:53:39
+
+    
+  - update `prepush` and `precommit` deps - [41ccee0]( https://github.com/royriojas/clix/commit/41ccee0 ), [royriojas](https://github.com/royriojas), 15/08/2015 01:16:57
+
+    
+  - update clix dep to get nicer log output - [20af260]( https://github.com/royriojas/clix/commit/20af260 ), [royriojas](https://github.com/royriojas), 11/08/2015 19:30:06
+
+    
   - Update to latest clix-logger - [34e0fd1]( https://github.com/royriojas/clix/commit/34e0fd1 ), [royriojas](https://github.com/royriojas), 11/08/2015 15:55:36
+
+    
+- **Bug Fixes**
+  - missing method in cli - [ba16f22]( https://github.com/royriojas/clix/commit/ba16f22 ), [royriojas](https://github.com/royriojas), 14/08/2015 21:33:44
+
+    
+  - missing deps - [d297129]( https://github.com/royriojas/clix/commit/d297129 ), [royriojas](https://github.com/royriojas), 14/08/2015 21:22:32
 
     
 ## v2.0.1
