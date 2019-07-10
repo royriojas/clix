@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-var main = require( '../src/main' );
-var programOptions = require( '../src/options' );
+const main = require('../src/main');
+const programOptions = require('../src/options');
 
-var cliLauncher = require( '../lib/cli-launcher' );
+const cliLauncher = require('../lib/cli-launcher');
 
 // cliLauncher.onError = function (args) {
 //   //var err = args.error;
@@ -11,12 +11,12 @@ var cliLauncher = require( '../lib/cli-launcher' );
 //   //console.error(err.message);
 // };
 
-cliLauncher.launch( programOptions, function ( program ) {
-  program.subtle( 'subtle message' );
-  program.log( 'log message' );
-  program.ok( 'ok message' );
-  program.error( 'error message' );
-  program.success( 'success message' );
+cliLauncher.launch(programOptions, program => {
+  program.subtle('subtle message');
+  program.log('log message');
+  program.ok('ok message');
+  program.error('error message');
+  program.success('success message');
 
-  main.run( program );
-} );
+  main.run(program);
+});
