@@ -1,5 +1,13 @@
 
 # clix - Changelog
+## v5.0.0
+- **Build Scripts Changes**
+  - set travis min node version - [bf812f3]( https://github.com/royriojas/clix/commit/bf812f3 ), [Roy Riojas](https://github.com/Roy Riojas), 11/07/2019 16:05:28
+
+    
+  - Upgrade clix deps - [75391af]( https://github.com/royriojas/clix/commit/75391af ), [Roy Riojas](https://github.com/Roy Riojas), 11/07/2019 16:04:38
+
+    
 ## v4.0.0
 - **Refactoring**
   - upgraded the modules - [a3aa349]( https://github.com/royriojas/clix/commit/a3aa349 ), [Roy Riojas](https://github.com/Roy Riojas), 10/07/2019 05:45:54
