@@ -15,7 +15,9 @@
     "post-v": "npm run do-changelog && git push --no-verify && git push --tags --no-verify",
     "bump-major": "npm run pre-v && npm version major -m 'BLD: Release v%s' && npm run post-v",
     "bump-minor": "npm run pre-v && npm version minor -m 'BLD: Release v%s' && npm run post-v",
-    "bump-patch": "npm run pre-v && npm version patch -m 'BLD: Release v%s' && npm run post-v"
+    "bump-patch": "npm run pre-v && npm version patch -m 'BLD: Release v%s' && npm run post-v",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -48,7 +50,8 @@
     "jq-trim": "0.1.2",
     "lodash": "4.17.14",
     "optionator": "0.8.2",
-    "read-json-sync": "2.0.1"
+    "read-json-sync": "2.0.1",
+    "snyk": "^1.317.0"
   },
   "changelogx": {
     "ignoreRegExp": [
@@ -78,5 +81,6 @@
     "parse",
     "options",
     "optionator"
-  ]
+  ],
+  "snyk": true
 }
